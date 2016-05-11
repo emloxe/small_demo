@@ -56,12 +56,12 @@ function getNumberBackgroundColor(num){
 		case 32:   bgc = "#f67c5f" ; break;
 		case 64:   bgc = "#f65e3b" ; break;
 		case 128:  bgc = "#edcf72" ; break;
-		case 256:  bgc = "#edcc61" ; break;
-		case 512:  bgc = "#99cc00" ; break;
-		case 1024: bgc = "#33b5e5" ; break;
-		case 2048: bgc = "#09c" ; break;
-		case 4096: bgc = "#a6c" ; break;
-		case 8192: bgc = "#93c" ; break;
+		case 256:  bgc = "#efc83f" ; break;
+		case 512:  bgc = "#fcd54c" ; break;
+		case 1024: bgc = "#fee259" ; break;
+		case 2048: bgc = "#fdf46b" ; break;
+		case 4096: bgc = "#888" ; break;
+		case 8192: bgc = "#505050" ; break;
 
 	}
 	return bgc;
@@ -329,11 +329,6 @@ function isGameOver(){
 }
 
 
-/*判断移动时是否有障碍物*/
-
-function noBlockVertical(i,k,j){
-
-}
 
 
 

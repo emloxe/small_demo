@@ -2,7 +2,8 @@ function showNumberWithAnimation(i,j,number){
 	var numberCell = $('#number-cell-'+i+'-'+j);
 	numberCell.css({
 		"background-color" : getNumberBackgroundColor( board[i][j] ) ,
-		"color"  : getNumberColor( board[i][j] )
+		"color"  : getNumberColor( board[i][j] ),
+		"font-size" : 0.6*cellSideLength+"px"
 	});
 	numberCell.text(board[i][j]);
 	numberCell.animate({

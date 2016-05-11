@@ -96,6 +96,13 @@ function updateBoardView(){
 					"background-color" : getNumberBackgroundColor( board[i][j] ) ,
 					"color"  : getNumberColor( board[i][j] )
 				});
+				if (board[i][j] >= 1024) {
+					numberCell.css("font-size",0.4*cellSideLength+"px");
+				}else if(board[i][j] >= 128){
+					numberCell.css("font-size",0.55*cellSideLength+"px");
+				}else{
+					numberCell.css("font-size",0.6*cellSideLength+"px");
+				}
 				numberCell.text(board[i][j]);
 				hasConflicted[i][j] = false;
 			}
@@ -104,7 +111,6 @@ function updateBoardView(){
 	}
 	$(".number-cell").css({
 		"line-height" : cellSideLength+"px",
-		"font-size"   : 0.7*cellSideLength+"px"
 	});
 }
 
@@ -134,7 +140,7 @@ document.addEventListener("touchend",function(event){
 	var deltaX = endX - startX;
 	var deltaY = endY - startY;
 
-	if(Math.abs(deltaX) < documentWidth*0.3 && Math.abs(deltaY) < documentWidth*0.3){
+	if(Math.abs(deltaX) < documentWidth*0.2 && Math.abs(deltaY) < documentWidth*0.2){
 		return false;
 	}
 
