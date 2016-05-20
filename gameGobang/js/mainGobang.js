@@ -61,8 +61,13 @@ var oneStep =function(i,j,me){
 
 
 var newGame = function(){
+	if (isNewGame) {
+		me = false;
+		isNewGame = false;
+	}else{
+		me=true;
+	}
 
-	me=true;
 	over =false;
 
 	chessBoard = [];
@@ -170,12 +175,10 @@ var gameOver = function(me){
 		a = confirm("电脑赢了，是否重新开始");
 	}
 	if (a) {
-		
-		setTimeout(function(){
-			newGame();
-			drawChessBoard();
-		},200); 
-		
+
+		isNewGame = true;
+		newGame();
+		drawChessBoard();
 
 	}
 };

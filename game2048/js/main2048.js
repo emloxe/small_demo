@@ -140,7 +140,7 @@ document.addEventListener("touchend",function(event){
 	var deltaX = endX - startX;
 	var deltaY = endY - startY;
 
-	if(Math.abs(deltaX) < documentWidth*0.2 && Math.abs(deltaY) < documentWidth*0.2){
+	if(Math.abs(deltaX) < documentWidth*0.15 && Math.abs(deltaY) < documentWidth*0.15){
 		return false;
 	}
 
