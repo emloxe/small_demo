@@ -8,7 +8,8 @@
 展示地址 https://emloxe.github.io/small_demo/gameGobang/index.html
 
 ###H5阅读器
-展示地址 https://emloxe.github.io/small_demo/reader/index.html
+展示地址 http://readerzwj.p.imooc.io/  
+        第一次访问后，请过5秒后再次访问，即可查看效果
 
 
 
